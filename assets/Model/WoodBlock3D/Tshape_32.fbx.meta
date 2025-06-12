@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "61a02159-84ba-4499-bef2-c1ee80d7168b",
+  "files": [],
+  "subMetas": {
+    "13319": {
+      "importer": "gltf-mesh",
+      "uuid": "61a02159-84ba-4499-bef2-c1ee80d7168b@13319",
+      "displayName": "",
+      "id": "13319",
+      "name": "Cube.105.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 6864
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7754f": {
+      "importer": "gltf-scene",
+      "uuid": "61a02159-84ba-4499-bef2-c1ee80d7168b@7754f",
+      "displayName": "",
+      "id": "7754f",
+      "name": "Tshape_32.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "61a02159-84ba-4499-bef2-c1ee80d7168b@13319"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "61a02159-84ba-4499-bef2-c1ee80d7168b@7754f"
+      ]
+    }
+  }
+}

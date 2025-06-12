@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b8f3d38d-cdac-4835-a86d-a2aeefdfd81a",
+  "files": [],
+  "subMetas": {
+    "a8165": {
+      "importer": "gltf-mesh",
+      "uuid": "b8f3d38d-cdac-4835-a86d-a2aeefdfd81a@a8165",
+      "displayName": "",
+      "id": "a8165",
+      "name": "Cube.085.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 5078
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c74b2": {
+      "importer": "gltf-scene",
+      "uuid": "b8f3d38d-cdac-4835-a86d-a2aeefdfd81a@c74b2",
+      "displayName": "",
+      "id": "c74b2",
+      "name": "Rectangle_13.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "b8f3d38d-cdac-4835-a86d-a2aeefdfd81a@a8165"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "b8f3d38d-cdac-4835-a86d-a2aeefdfd81a@c74b2"
+      ]
+    }
+  }
+}
