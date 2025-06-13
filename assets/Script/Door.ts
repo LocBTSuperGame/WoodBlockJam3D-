@@ -1,4 +1,5 @@
 import { _decorator, BoxCollider, Component, ICollisionEvent, Material, MeshRenderer, Node, resources, tween, Vec3 } from 'cc';
+import { Block } from './Block';
 const { ccclass, property } = _decorator;
 
 @ccclass('Wall')
@@ -26,11 +27,33 @@ export class Wall extends Component {
     }
 
     onCollisionEnter(event: ICollisionEvent) {
-        const blockNode = event.otherCollider.node;
-        const blockComp = blockNode.getComponent('Block') as any;
-        if (blockComp && blockComp.materialIndex === this.materialIndex) {
-            
+        let node = event.otherCollider.node;
+        let foundBlock: Block | null = null;
+
+        // if (blockComp && blockComp.materialIndex === this.materialIndex) {
+        //     blockComp.Node.active = false;
+        // }
+        console.log('Ray hit node:', node.name);
+        // Lặp lên các node cha đến khi có component Block hoặc hết node
+        while (node) {
+            const blockComp = node.getComponent(Block);
+            if (blockComp) {
+                foundBlock = blockComp;
+                break;
+            }
+            node = node.parent;
         }
+
+        if (!foundBlock) return;
+        if (foundBlock.materialIndex !== this.materialIndex) {
+            console.warn(`Block material index ${foundBlock.materialIndex} không khớp với Wall index ${this.materialIndex}`);
+            return;
+        }
+        else {
+            console.log(`Block material index ${foundBlock.materialIndex} khớp với Wall index ${this.materialIndex}`);
+            foundBlock.isHide = true; // Ẩn block khi va chạm với tường
+        }
+
 
         // const blockNode = event.otherCollider.node;
         // // Giả sử Block có script với thuộc tính typeColor
