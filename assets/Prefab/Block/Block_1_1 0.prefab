@@ -28,17 +28,17 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
+        "__id__": 15
       }
     ],
     "_prefab": {
-      "__id__": 15
+      "__id__": 17
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 8,
       "y": 0,
-      "z": 0
+      "z": 8
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -201,7 +201,7 @@
       "__uuid__": "d88d806b-2d74-4eb0-9116-42c10ab2bdc6@0344e",
       "__expectedType__": "cc.Mesh"
     },
-    "_convex": false,
+    "_convex": true,
     "_id": ""
   },
   {
@@ -268,9 +268,13 @@
     },
     "_children": [],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 12
+      }
+    ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 14
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -302,6 +306,27 @@
     "_id": ""
   },
   {
+    "__type__": "567ffTr68hEorE4ikQsYG7O",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 13
+    },
+    "rowOwn": 0,
+    "colOwn": 0,
+    "nodeCloset": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "bfJDlKxhhNFZ+fki5UKXpR"
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -315,7 +340,7 @@
     "nestedPrefabInstanceRoots": null
   },
   {
-    "__type__": "698f3FBywFJAZy1YOWBD22z",
+    "__type__": "bc1acIeABRCiI6VjjAqpOoL",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -324,15 +349,35 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 14
+      "__id__": 16
     },
-    "shapeType": 0,
     "materialIndex": 1,
+    "targetPoss": [],
+    "typeDirMoveOut": 1,
+    "left": {
+      "__id__": 11
+    },
+    "right": {
+      "__id__": 11
+    },
+    "up": {
+      "__id__": 11
+    },
+    "down": {
+      "__id__": 11
+    },
+    "offsetUp": 0,
+    "offsetDown": 0,
+    "offsetLeft": 0,
+    "offsetRight": 0,
+    "door": null,
+    "limitUpDown": false,
+    "limitLeftRight": false,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "feHVAq8jBBP5hAJ2SAEtvv"
+    "fileId": "a7JsQ5lfhLf5hNGdcrPKjc"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -344,6 +389,6 @@
     },
     "fileId": "79fzN2lAxb0L9Pxk4GD1Zj",
     "instance": null,
-    "targetOverrides": null
+    "targetOverrides": []
   }
 ]

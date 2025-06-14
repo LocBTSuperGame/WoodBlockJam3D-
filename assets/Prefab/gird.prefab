@@ -104,36 +104,25 @@
     "fileId": "4b4TyBp/5PCLxfJz8Z2Q8s"
   },
   {
-    "__type__": "cc.BoxCollider",
+    "__type__": "595f8KCKYJFvL5uOxXOQ/9Y",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
       "__id__": 1
     },
-    "_enabled": false,
+    "_enabled": true,
     "__prefab": {
       "__id__": 5
     },
-    "_material": null,
-    "_isTrigger": false,
-    "_center": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_size": {
-      "__type__": "cc.Vec3",
-      "x": 1.25,
-      "y": 1.25,
-      "z": 0.1
-    },
+    "special": false,
+    "nodeOwn": null,
+    "specialNode": null,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "88o/MTeblEnI+EuHkEKU6S"
+    "fileId": "395i2rwq9D445phhl1U6HU"
   },
   {
     "__type__": "cc.PrefabInfo",
