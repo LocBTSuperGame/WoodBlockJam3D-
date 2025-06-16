@@ -36,9 +36,9 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 8,
+      "x": 0,
       "y": 0,
-      "z": 8
+      "z": 6
     },
     "_lrot": {
       "__type__": "cc.Quat",
@@ -366,10 +366,10 @@
     "down": {
       "__id__": 11
     },
-    "offsetUp": 0,
-    "offsetDown": 0,
-    "offsetLeft": 0,
-    "offsetRight": 0,
+    "offsetUp": 1.05,
+    "offsetDown": 1.05,
+    "offsetLeft": 1.05,
+    "offsetRight": 1.05,
     "door": null,
     "limitUpDown": false,
     "limitLeftRight": false,
@@ -388,7 +388,6 @@
       "__id__": 0
     },
     "fileId": "79fzN2lAxb0L9Pxk4GD1Zj",
-    "instance": null,
     "targetOverrides": []
   }
 ]

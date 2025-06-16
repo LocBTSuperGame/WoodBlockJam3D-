@@ -1,6 +1,8 @@
 import { _decorator, Camera, Canvas, Component, EventTouch, Input, input, math, Node, PhysicsSystem, UI, Vec3 } from 'cc';
 import { GameManager } from './GameManager';
 import { Block } from '../Element/Block';
+import { DeviceDirector } from '../Script/DeviceDirector';
+import { BlockManager } from './BlockManager';
 
 const { ccclass, property } = _decorator;
 
@@ -30,8 +32,10 @@ export class InputManager extends Component {
             this.firstUI.node.active = false;
             this.checkFirst = true;
         }
+        if (BlockManager.instance.blockUsedCount >= BlockManager.instance.blockUsedCountMax) {
+            DeviceDirector.instance.redirectToStore();
+        }
         if (PhysicsSystem.instance.raycastClosest(this.GetPosWorldCam(event))) {
-            console.log('raycast hit' + PhysicsSystem.instance.raycastClosestResult.collider.node.name);
             const res = PhysicsSystem.instance.raycastClosestResult;
             const hitNode = res.collider.node;
             if (hitNode !== null && hitNode.parent.getComponent(Block) && !hitNode.parent.getComponent(Block).canMove) {
@@ -53,7 +57,7 @@ export class InputManager extends Component {
             const limit = blockCom.GetGroupLimit(); // { left, right, up, down }
             const data = blockCom.GetWorldLimitPosition(limit); // { min: Vec3, max: Vec3 }
             // console.log('limit ',limit);
-            // console.log('data pos ',data);
+            // console.('data pos ',data);
             // console.log('pos ', this.nodeDetect.worldPosition)
             let clampedX: number = math.clamp(hitPoint.x, data.min.x, data.max.x);
             let clampedZ: number = math.clamp(hitPoint.z, data.min.z, data.max.z);

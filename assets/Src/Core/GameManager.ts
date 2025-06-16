@@ -11,14 +11,13 @@ export class GameManager extends Component {
     }
     public checkFirst: boolean = false;
     public checkCanTouch: boolean = true;
+
     onLoad() {
         GameManager._instance = this;
-        SoundManager.instance.playBGM("bgm_theme");
         GameManager.preloadAllMaterials();
     }
     static preloadAllMaterials() {
         resources.preloadDir('Material', () => {
-            console.log('Preloaded all block materials.');
         });
     }
 }

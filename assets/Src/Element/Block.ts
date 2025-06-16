@@ -296,6 +296,7 @@ export class Block extends Component {
     SetPosTouchEnd() {
         let nodePosOrgin = this.listNodeOwnFrame[0];
         let closetNodeOrigin: Node = nodePosOrgin.getComponent(PosCheck).nodeCloset;
+
         const offset = new Vec3(
             closetNodeOrigin.worldPosition.x - nodePosOrgin.worldPosition.x,
             nodePosOrgin.worldPosition.y * 0,

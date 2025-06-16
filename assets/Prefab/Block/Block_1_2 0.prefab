@@ -133,7 +133,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "2d01add0-cd34-4a11-81d2-03509068e3ef",
+        "__uuid__": "d672c9be-23c9-4d32-a129-8333a8b227de",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -204,7 +204,7 @@
       "__uuid__": "ba751d00-a631-4684-acb3-de47d0171bc5@3812e",
       "__expectedType__": "cc.Mesh"
     },
-    "_convex": false,
+    "_convex": true,
     "_id": ""
   },
   {
@@ -226,7 +226,7 @@
     "_group": 2,
     "_type": 1,
     "_mass": 1,
-    "_allowSleep": true,
+    "_allowSleep": false,
     "_linearDamping": 0,
     "_angularDamping": 0,
     "_useGravity": false,
@@ -439,21 +439,21 @@
     "targetPoss": [],
     "typeDirMoveOut": 1,
     "left": {
-      "__id__": 15
+      "__id__": 11
     },
     "right": {
-      "__id__": 11
-    },
-    "up": {
       "__id__": 15
     },
-    "down": {
+    "up": {
       "__id__": 11
     },
-    "offsetUp": 0,
-    "offsetDown": 0,
-    "offsetLeft": 0,
-    "offsetRight": 0,
+    "down": {
+      "__id__": 15
+    },
+    "offsetUp": 1.05,
+    "offsetDown": 1.05,
+    "offsetLeft": 2.05,
+    "offsetRight": 2.05,
     "door": null,
     "limitUpDown": false,
     "limitLeftRight": false,
