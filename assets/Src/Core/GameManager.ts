@@ -11,12 +11,9 @@ export class GameManager extends Component {
     }
     public checkFirst: boolean = false;
     public checkCanTouch: boolean = true;
-    @property
-    public volumeBGM: number = 0.1;
     onLoad() {
         GameManager._instance = this;
         SoundManager.instance.playBGM("bgm_theme");
-        SoundManager.instance.setBGMVolume(this.volumeBGM);
         GameManager.preloadAllMaterials();
     }
     static preloadAllMaterials() {

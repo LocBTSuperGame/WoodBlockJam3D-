@@ -15,11 +15,11 @@ export class Door extends Component {
     effect: Node = null;
 
     onLoad() {
-        if (this.materialIndex >= 1 && this.materialIndex <= 7) {
-            this.setMaterialForCubes(this.materialIndex);
-        } else {
-            this.checkMaterialIndex();
-        }
+        // if (this.materialIndex >= 1 && this.materialIndex <= 7) {
+        //     this.setMaterialForCubes(this.materialIndex);
+        // } else {
+        //     this.checkMaterialIndex();
+        // }
         this.effect.active = false;
     }
 

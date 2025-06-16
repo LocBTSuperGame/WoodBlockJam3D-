@@ -46,9 +46,9 @@ export class Block extends Component {
     limitLeftRight: boolean = false;
 
     onLoad() {
-        if (this.materialIndex >= 1 && this.materialIndex <= 7) {
-            this.setMaterialForCubes(this.materialIndex);
-        }
+        // if (this.materialIndex >= 1 && this.materialIndex <= 7) {
+        //     this.setMaterialForCubes(this.materialIndex);
+        // }
         this.InitListNodeOwn();
 
     }
